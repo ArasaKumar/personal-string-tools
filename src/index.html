@@ -13,12 +13,18 @@
 </head>
 <body>
     <h1>String tools</h1>
-    <div>
-        <textarea id="originalData" style="height: 60vh;width:45vw;"></textarea>
-        <textarea id="modifiedData" style="height: 60vh;width:45vw;"></textarea>
+    <div class="flex-container">
+        <textarea id="originalData"></textarea>
+        <textarea id="modifiedData"></textarea>
     </div>
     <br>
-    <button class="button" onclick="btnRtrim()"> R Trim </button>
-    <button class="button" onclick="copyModifiedText()"> Copy to clipboard </button>
+    <div>
+        <button class="button" onclick="btnRtrim()"> R Trim </button>
+    </div>
+    <br>
+    <div>
+        <button class="button" onclick="copyModifiedText()"> Copy to clipboard </button>
+        <button class="button" onclick="reset()"> Reset </button>
+    </div>
 </body>
 </html>

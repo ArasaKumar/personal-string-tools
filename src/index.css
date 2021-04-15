@@ -1,18 +1,39 @@
-:root{
-    --btn_Background : black;
+:root {
+    --btn_Background: black;
+}
+
+h1 {
+    margin-left: 10px;
 }
 
 body {
-    background: #000428; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Fira Code', monospace;
     font-size: 18px;
     color: white;
 }
 
-textarea{
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1294px) {
+    textarea {
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width:1295px) {
+    textarea {
+        width: 47vw;
+    }
+}
+
+textarea {
     font-size: 18px;
+    margin: 10px;
+    height: 60vh;
 }
 
 button {
@@ -23,4 +44,5 @@ button {
     padding-bottom: 3px;
     padding-right: 10px;
     padding-left: 10px;
+    margin-left:10px;
 }

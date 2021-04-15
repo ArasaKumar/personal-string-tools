@@ -13,3 +13,8 @@ copyModifiedText = () => {
     modTxtArea.select();
     alert(document.execCommand('copy'));
 };
+
+reset = () => {
+    document.getElementById('modifiedData').value = '';
+    document.getElementById('originalData').value = '';
+};
